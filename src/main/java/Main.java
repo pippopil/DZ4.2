@@ -1,11 +1,15 @@
 public class Main {
   public static void main(String[] args) {
-    BonusService service = new BonusService();
 
-    long amount = 1000_60;
-    boolean registered = true;
 
-    service.calculate(amount, registered);
+      boolean registered = true;
+      long amount = 100060;
+      int percent = 3;
+
+      long bonus = amount * percent / 100 / 100;
+      System.out.println(bonus);
+
+
   }
 }
 
